@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pasteleria nombre="XSCake" ciudad="Sevilla">
+    
+    <producto id="P01" disponible="si">
+        <nombre>Tarta de Chocolate</nombre>
+        <categoria>Tartas</categoria>
+        <precio moneda="EUR">18.50</precio>
+        <stock>5</stock>
+        <valoracion>4.8</valoracion>
+    </producto>
+    
+    <producto id="P02" disponible="si">
+        <nombre>Croissant</nombre>
+        <categoria>Bollería</categoria>
+        <precio moneda="EUR">1.80</precio>
+        <stock>20</stock>
+        <valoracion>4.2</valoracion>
+    </producto>
+    
+    <producto id="P03" disponible="no">
+        <nombre>Cheesecake</nombre>
+        <categoria>Tartas</categoria>
+        <precio moneda="EUR">15.00</precio>
+        <stock>0</stock>
+        <valoracion>4.7</valoracion>
+    </producto>
+    
+    <producto id="P04" disponible="si">
+        <nombre>Donut Glaseado</nombre>
+        <categoria>Bollería</categoria>
+        <precio moneda="EUR">2.20</precio>
+        <stock>12</stock>
+        <valoracion>4.0</valoracion>
+    </producto>
+    
+    <producto id="P05" disponible="si">
+        <nombre>Macarons</nombre>
+        <categoria>Repostería</categoria>
+        <precio moneda="EUR">6.50</precio>
+        <stock>30</stock>
+        <valoracion>4.9</valoracion>
+    </producto>
+    
+    <producto id="P06" disponible="si">
+        <nombre>Tarta de Fresa</nombre>
+        <categoria>Tartas</categoria>
+        <precio moneda="EUR">17.00</precio>
+        <stock>7</stock>
+        <valoracion>4.5</valoracion>
+    </producto>
+    
+    <producto id="P07" disponible="no">
+        <nombre>Brownie</nombre>
+        <categoria>Repostería</categoria>
+        <precio moneda="EUR">3.50</precio>
+        <stock>0</stock>
+        <valoracion>4.6</valoracion>
+    </producto>
+    
+    <producto id="P08" disponible="si">
+        <nombre>Palmera de Chocolate</nombre>
+        <categoria>Bollería</categoria>
+        <precio moneda="EUR">2.80</precio>
+        <stock>15</stock>
+        <valoracion>4.3</valoracion>
+    </producto>
+    
+    <producto id="P09" disponible="si">
+        <nombre>Red Velvet</nombre>
+        <categoria>Tartas</categoria>
+        <precio moneda="EUR">19.00</precio>
+        <stock>4</stock>
+        <valoracion>4.9</valoracion>
+    </producto>
+    
+    <producto id="P10" disponible="si">
+        <nombre>Galletas Artesanales</nombre>
+        <categoria>Repostería</categoria>
+        <precio moneda="EUR">5.00</precio>
+        <stock>25</stock>
+        <valoracion>4.1</valoracion>
+    </producto>
+    
+</pasteleria>
