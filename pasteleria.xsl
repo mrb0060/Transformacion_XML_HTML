@@ -29,11 +29,11 @@
         <h1>Catálogo de Productos</h1>
         
         <!-- FUNCIONES XPath -->
-        <p>Total de productos: 
+        <p>Total de productos:
           <xsl:value-of select="count(pasteleria/producto)"/>
         </p>
         
-        <p>Stock total disponible: 
+        <p>Stock total disponible:
           <xsl:value-of select="sum(pasteleria/producto/stock)"/>
         </p>
         
@@ -46,11 +46,10 @@
             <th>Valoración</th>
           </tr>
           
-          <!-- FOR-EACH + SORT + APPLY-TEMPLATES -->
-          <xsl:for-each select="pasteleria/producto">
+          <!-- APPLY-TEMPLATES + SORT -->
+          <xsl:apply-templates select="pasteleria/producto">
             <xsl:sort select="precio" data-type="number" order="ascending"/>
-            <xsl:apply-templates select="."/>
-          </xsl:for-each>
+          </xsl:apply-templates>
           
         </table>
         
@@ -67,25 +66,20 @@
       
       <tr>
         
-        <!-- ELEMENT -->
-        <xsl:element name="td">
-          <xsl:value-of select="nombre"/>
-        </xsl:element>
+        <!-- FOR-EACH: recorrer los campos principales -->
+        <xsl:for-each select="nombre | categoria | precio | stock">
+          
+          <td>
+            <xsl:value-of select="."/>
+            <!-- Añadir símbolo € solo en precio -->
+            <xsl:if test="name() = 'precio'">
+              <xsl:text> €</xsl:text>
+            </xsl:if>
+          </td>
+          
+        </xsl:for-each>
         
-        <td>
-          <xsl:value-of select="categoria"/>
-        </td>
-        
-        <td>
-          <xsl:value-of select="precio"/>
-          <xsl:text> €</xsl:text>
-        </td>
-        
-        <td>
-          <xsl:value-of select="stock"/>
-        </td>
-        
-        <!-- CHOOSE + ATTRIBUTE -->
+        <!-- Valoración con estilos -->
         <td>
           <xsl:element name="span">
             
